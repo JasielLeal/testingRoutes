@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.center {
+    width: 100%;
+    padding: 0rem 7rem;
+}
+
+:root {
+    font-size: clamp(40%, 1% + 2vw, 62.5%);
+
+    --white: white;
+    --gray: #c4c4cc;
+}
+
+#app {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./assets/background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: initial;
+    gap: 5rem;
+    padding: 4rem 0rem;
+    position: fixed;
+    width: 100%;
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+.link a {
+    font-family: Roboto;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--gray);
+}
+
+.link a:hover {
+    color: var(--white);
+}
+
+
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main h1 {
+    font-family: Roboto;
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 6rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--white);
+    margin-bottom: 2.4rem;
+}
+
+.main a {
+    padding: 1.2rem 3.2rem;
+    border-radius: 5px;
+    border: 2px solid white;
+    gap: .8rem;
+    background-color: transparent;
+    color: var(--white);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/*universo*/
+
+.universoContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.universo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    justify-content: center;
+    padding-left: 7rem;
+}
+
+.universo h1 {
+    color: white;
+    font-family: Roboto;
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 6rem;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 1.6rem;
+}
+
+.universo p {
+    color: white;
+    font-family: Roboto;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.9rem;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 70rem;
+}
+
+/*exploração*/
+
+.exploracaoContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.exploracao {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    justify-content: center;
+    padding-left: 7rem;
+}
+
+.exploracao h1 {
+    color: white;
+    font-family: Roboto;
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 6rem;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 1.6rem;
+}
+
+.exploracao p {
+    color: white;
+    font-family: Roboto;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.9rem;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 70rem;
+}
+
+/*Erro*/
+
+.erroContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.erro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    justify-content: center;
+    padding-left: 7rem;
+}
+
+.erro h1 {
+    color: white;
+    font-family: Roboto;
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 6rem;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 1.6rem;
+}
+
+
+
+
+
+@media (max-width: 841px){
+    .center{
+        padding: 0;
+        justify-content: center;
+    }
+
+    .navBar{
+        justify-content: center;
+    }
+
+    .exploracao{
+        padding: 0;
+    }
+
+    .universo{
+        padding: 0;
+    }
+
+    .exploracao h1{
+        text-align: center;
+    }
+    .universo h1{
+        text-align: center;
+    }
+    .exploracao p{
+        width: 100%;
+        text-align: center;
+        padding: 0 2rem;
+    }
+    .universo p{
+        width: 100%;
+        text-align: center;
+        padding: 0 2rem;
+    }
+}
+
+.active a{
+    font-weight: 700;
+    color: var(--white);
+}
